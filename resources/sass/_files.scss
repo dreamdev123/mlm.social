@@ -1,0 +1,121 @@
+.files-section {
+    position: absolute;
+	height: calc(100vh - 120px);
+	top: 80px;
+	display: flex;
+	justify-content: center;
+	overflow-y: scroll;
+	flex-wrap: wrap;
+    z-index: 10;
+	width: 100%;
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+    .share-title {
+        font-size: 18px;
+        text-align: center;
+        font-family: 'DinPro Medium', sans-serif;
+        margin-top: 15px;
+    }
+    .link-text {
+		font-size: 16px;
+		font-family: 'DinPro Light', sans-serif;
+		text-align: justify;
+	}
+	.link-title {
+		font-size: 18px;
+		font-family: 'DinPro Medium', sans-serif;
+		text-align: center;
+	}
+	.link-address {
+		font-size: 16px;
+		font-family: 'DinPro Light', sans-serif;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+	.btn-section {
+		.copy-btn {
+			 width: 100%;
+			 max-width: 300px;
+			 height: 44px;
+			 background: $main-color;
+			 display: flex;
+			 align-items: center;
+			 justify-content: center;
+			 text-transform: uppercase;
+			 color: $white;
+			 -webkit-border-radius: 10rem;
+			 -moz-border-radius: 10rem;
+			 -ms-border-radius: 10rem;
+			 border-radius: 10rem;
+			 font-size: 16px;
+			 font-family: 'DinPro', sans-serif;
+			 border: 0.1rem solid $main-color;
+			 cursor: pointer;
+			 &:hover {
+				background: $success !important;
+				color: $primary !important;
+				border-color: $success !important;
+			}
+			&:focus, &:active {
+				background: $success !important;
+				color: $primary !important;
+				border-color: $success !important;
+				box-shadow: none;
+			}
+		}
+	}
+	.social-icon-section {
+		padding-left: 35px;
+		padding-right: 35px;
+		padding-top: 10px;
+		padding-bottom: 25px;
+		.social-icon {
+			width: 45px;
+			height: auto;
+			margin: auto;
+		}
+	}
+    .packs-wrp {
+        width: 33.3333%;
+        margin-left: 2px;
+        margin-right: 2px;
+        .packs-title {
+            font-size: 18px;
+            font-family: 'DinPro', sans-serif;
+            text-align: center;
+        }
+        .packs {
+            width: 100%;
+            padding-bottom: 100%;
+            background: $main-color-50;
+        }
+    }    
+}
+
+@media only screen and (max-width: 475.98px) {
+    .files-section {
+        .link-text {
+				margin-left: 25px;
+				margin-right: 25px;
+			}
+			.btn-section {
+				.copy-btn {
+					width: 50%;
+				}
+			}
+			.packs-title {
+				min-height: 55px;
+			}
+			.social-icon-section {
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 5px;
+				padding-bottom: 20px;
+				.social-icon {
+					width: 35px;
+					height: auto;
+					margin: auto;
+				}
+			}
+    }
+}
